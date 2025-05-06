@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -53,6 +52,7 @@ const Hero = () => {
                 src="/lovable-uploads/0f29f751-6cf6-4119-bb2c-f8cab6bcf188.png" 
                 onLoad={() => setIsLoaded(true)}
               />
+              <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
             </div>
           </div>
         </div>
