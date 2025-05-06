@@ -39,7 +39,7 @@ const Hero = () => {
           </div>
           <div className="md:w-1/2 relative">
             <div className="relative">
-              <img src="/lovable-uploads/ff10d223-ab50-42b8-8d23-b7940d3b91c3.png" alt="App Preview" className="w-full max-w-md mx-auto rounded-lg shadow-2xl object-scale-down" />
+              <img alt="App Preview" className="w-full max-w-md mx-auto rounded-lg shadow-2xl object-scale-down" src="/lovable-uploads/0f29f751-6cf6-4119-bb2c-f8cab6bcf188.png" />
             </div>
           </div>
         </div>
