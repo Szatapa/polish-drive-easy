@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
+
 const Hero = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+  
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+  
   return <section className="bg-muted pt-10 pb-20 md:pt-16 md:pb-32 overflow-hidden relative">
       <div className="container-custom relative z-10">
         <div className="flex flex-col md:flex-row items-center">
@@ -39,7 +46,13 @@ const Hero = () => {
           </div>
           <div className="md:w-1/2 relative">
             <div className="relative">
-              <img alt="App Preview" className="w-full max-w-md mx-auto rounded-lg shadow-2xl object-scale-down" src="/lovable-uploads/0f29f751-6cf6-4119-bb2c-f8cab6bcf188.png" />
+              <img 
+                alt="App Preview" 
+                className={`w-full max-w-md mx-auto rounded-lg shadow-2xl object-scale-down transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'}`} 
+                src="/lovable-uploads/0f29f751-6cf6-4119-bb2c-f8cab6bcf188.png" 
+                onLoad={() => setIsLoaded(true)}
+              />
+              <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
             </div>
           </div>
         </div>
