@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -48,7 +49,7 @@ const Hero = () => {
             <div className="relative">
               <img 
                 alt="App Preview" 
-                className={`w-full max-w-md mx-auto rounded-lg shadow-2xl object-scale-down transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'}`} 
+                className={`w-full max-w-md mx-auto rounded-lg object-scale-down transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-95'}`} 
                 src="/lovable-uploads/0f29f751-6cf6-4119-bb2c-f8cab6bcf188.png" 
                 onLoad={() => setIsLoaded(true)}
               />
